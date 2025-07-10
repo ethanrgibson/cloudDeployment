@@ -7,4 +7,4 @@ services:
     env_file:
     - .env.waxify          # Load environment variables from .env.quick file
     labels:
-    caddy.domain: waxify.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
+      caddy.domain: waxify.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
