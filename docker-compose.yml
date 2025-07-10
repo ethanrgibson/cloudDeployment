@@ -1,10 +1,10 @@
 services:
-  quick:     Waxify               # Name of the service
-    container_name: quick   # Name of the container
-    image: ghcr.io/ethanrgibson/quick:latest  # Use the latest image from GHCR
+  quick:     waxify               # Name of the service
+    container_name: waxify  # Name of the container
+    image: ghcr.io/ethanrgibson/waxify:latest  # Use the latest image from GHCR
     ports: 
       - "7045:8080"         # Map port 7045 on the host to port 8080 in the container
     env_file:
-      - .env.quick          # Load environment variables from .env.quick file
+      - .env.waxify          # Load environment variables from .env.quick file
     labels:
-      caddy.domain: ethanrgibson.com/waxify  # Caddy label for domain routing <quick.gregslist.dev>
+      caddy.domain: waxify.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
