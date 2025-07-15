@@ -8,7 +8,6 @@ services:
     - .env.waxify          # Load environment variables from .env.quick file
     labels:
       caddy.domain: waxify.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
-services:
   keepr:                # Name of the service
     container_name: keepr  # Name of the container
     image: ghcr.io/ethanrgibson/keepr:latest  # Use the latest image from GHCR
