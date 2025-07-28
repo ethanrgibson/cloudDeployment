@@ -8,12 +8,12 @@ services:
     - .env.waxify          # Load environment variables from .env.quick file
     labels:
       caddy.domain: waxify.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
-  keepr:                # Name of the service
-    container_name: keepr  # Name of the container
-    image: ghcr.io/ethanrgibson/keepr:latest  # Use the latest image from GHCR
-    ports: 
-      - "7046:8080"         # Map port 7045 on the host to port 8080 in the container
-    env_file:
-    - .env.keepr          # Load environment variables from .env.quick file
-    labels:
-      caddy.domain: keepr.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
+  # keepr:                # Name of the service
+  #   container_name: keepr  # Name of the container
+  #   image: ghcr.io/ethanrgibson/keepr:latest  # Use the latest image from GHCR
+  #   ports: 
+  #     - "7046:8080"         # Map port 7045 on the host to port 8080 in the container
+  #   env_file:
+  #   - .env.keepr          # Load environment variables from .env.quick file
+  #   labels:
+  #     caddy.domain: keepr.ethanrgibson.com  # Caddy label for domain routing <quick.gregslist.dev>
