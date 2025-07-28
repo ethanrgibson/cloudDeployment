@@ -12,7 +12,7 @@ jobs:
       - name: Prepare .env_files
         run: |
           printf "%s" "${{ secrets.ENV_WAXIFY }}" > .env.waxify
-          printf "%s" "${{ secrets.ENV_KEEPR }}" > .env.keepr
+          # printf "%s" "${{ secrets.ENV_KEEPR }}" > .env.keepr
           
       - name: Deploy with Infra
         uses: codeworksacademy/infra@main
